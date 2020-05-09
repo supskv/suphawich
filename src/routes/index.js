@@ -1,9 +1,4 @@
-import express from "express"
+import WebRouter from "./web"
+import ApiRouter from "./api"
 
-const router = express.Router()
-
-router.get("/", (req, res) => {
-  return res.send("Received a GET HTTP method")
-})
-
-export default router
+export { ApiRouter, WebRouter }
