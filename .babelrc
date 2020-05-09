@@ -11,6 +11,12 @@
           "@routes": "./src/routes"
         }
       }
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
     ]
   ]
 }
