@@ -8,3 +8,13 @@ export const getMediaFromIG = async (req, res) => {
 
   res.status(400).end()
 }
+
+export const getMediaFromIGStories = async (req, res) => {
+  const media = await SocialRepo.getMediaFromIGStories(req.query.q)
+
+  if (media) {
+    res.send({ media }).end()
+  }
+
+  res.status(400).end()
+}

@@ -1,3 +1,4 @@
+import Api from "./api"
 import App from "./app"
 
-export { App }
+export { Api, App }
